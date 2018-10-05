@@ -12,7 +12,7 @@ object TestSpark2 {
 
 	def main(args: Array[String]) = {
 
-			println("##Sonra Test##:Started\n")
+			println("##Test##:Started\n")
 			val parser = new scopt.OptionParser[Config]("SplitTsv") {
 				head("SplitTsv", "Spark")
 
@@ -63,7 +63,7 @@ object TestSpark2 {
 		
 
 					sp.stop
-					println("##Sonra Test##:Finished")
+					println("##Test##:Finished")
 			} getOrElse {
 	
 
