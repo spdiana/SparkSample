@@ -11,7 +11,7 @@ object TestSpark3 {
 
 	def main(args: Array[String]) = {
 
-			println("##Sonra Test##:Started\n")
+			println("##Test##:Started\n")
 
 			val usage = """  Use: <jar file name> <input path name> <output path name> """
 
@@ -55,7 +55,7 @@ object TestSpark3 {
 					dfTags.show(10)
 
 					sp.stop
-					println("##Sonra Test##:Finished")
+					println("##Test##:Finished")
 
 
 
