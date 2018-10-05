@@ -14,7 +14,7 @@ object TestSpark4 {
 
 	def main(args: Array[String]) = {
 
-			println("##Sonra Test##:Started\n")
+			println("## Test##:Started\n")
 			val parser = new scopt.OptionParser[Config]("SplitTsv") {
 				head("SplitTsv", "Spark")
 
@@ -86,7 +86,7 @@ object TestSpark4 {
 			//		read.filter(x => x.startsWith("USAGE") ).saveAsTextFile(outputUsage)
 
 			sp.stop
-			println("##Sonra Test##:Finished")
+			println("## Test##:Finished")
 			} getOrElse {
 
 
