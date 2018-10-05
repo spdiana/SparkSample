@@ -14,7 +14,7 @@ object TestSpark1 {
 
 			System.setProperty("hadoop.home.dir",  sys.env("HADOOP_HOME"));
 
-			println("##Sonra Test##:Started\n")
+			println("##Test##:Started\n")
 			val parser = new scopt.OptionParser[Config]("SplitTsv") {
 				head("SplitTsv", "Spark")
 
@@ -51,7 +51,7 @@ object TestSpark1 {
 					rdd.filter(x => x.startsWith("USAGE") ).saveAsTextFile(outputUsage)
 
 					sc.stop
-					println("##Sonra Test##:Finished")
+					println("##Test##:Finished")
 			} getOrElse {
 
 			}
